@@ -1,0 +1,108 @@
+body {
+  background-color: #1c0045;
+  /* direction: rtl; */
+}
+li {
+  list-style: none;
+}
+.project {
+  background-color: white;
+  margin: 0px auto;
+  width: 570px;
+}
+.project header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #532d92;
+  width: 100%;
+  height: 50px;
+  color: white;
+  margin: 0;
+}
+.project header h3 {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  font-size: 26px;
+  align-items: center;
+}
+
+.project header svg {
+  height: 100%;
+  fill: white;
+}
+.project header svg:hover {
+  cursor: pointer;
+}
+
+main {
+  width: 570px;
+  margin: 0;
+  background-color: #eeedef;
+  padding-bottom: 20px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 10px 0px;
+  
+}
+.done{
+  background-color:rgb(158, 253, 160) ;
+
+}
+.task:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 2px black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+.task .info{
+  display: flex; flex-direction: column; justify-content: center; padding: 0px 10px;
+}
+.task ul {
+  height: 60px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task ul li {
+  display: flex;
+  height: 100%;
+  margin: 0px 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.task ul li:first-child svg{
+  background-color: brown;
+}
+
+.task ul li:last-child svg{
+  background-color: gray;
+}
+.task ul li svg{
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: red;
+  text-align: center;
+  fill: white;
+}
+
+.task ul li:hover::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  bottom: 7px;
+}
+
